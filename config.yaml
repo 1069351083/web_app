@@ -1,0 +1,26 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  port: 8090
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: "root"
+  dbName: "leige"
+redis:
+  host: "112.124.29.124"
+  port: 6379
+  db: 0
+  PassWord: ""
+  MaxIdle: 30
+  MaxActive: 30
+  IdleTimeout: 200
+yml :
+  single-key: "nvzPlus"
