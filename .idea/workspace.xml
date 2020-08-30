@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eabb4bc3-f910-4d27-bdca-1efb93cc0461" name="Default Changelist" comment="" />
+    <list default="true" id="eabb4bc3-f910-4d27-bdca-1efb93cc0461" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logic/api/sysCasbinController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/casbin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/casbin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/sysPermissionRole.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/sysUserRole.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/casbinService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/api/sysRoleController.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/api/sysRoleController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/api/sysUserController.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/api/sysUserController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/SysRole.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/SysRole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/common/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/common/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/sysPermission.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/sysPermission.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/sysRole/sysRoleRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/sysRole/sysRoleRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/sysRoleService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/sysRoleService.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +38,14 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1egIU8H85qsJF1g8aYJ11zytuAX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,10 +58,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ask.go.tool.to.install.GoImportsTaskConsumer" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-gin-example-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GormTest" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gopath\src\web_app\model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gopath\src\web_app\model" />
     </key>
@@ -110,10 +135,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="188" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1597755517139" />
-    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1597755396528">
+    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1598691602561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597755396528" />
+    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598691602561" />
     <state width="1493" height="314" key="GridCell.Tab.0.bottom" timestamp="1598529655460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -154,10 +179,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1597145524277" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598007982070">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598691135985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598007982070" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598691135985" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

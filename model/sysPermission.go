@@ -33,12 +33,13 @@ type SysPermission struct {
 
 type TreeNode struct {
 	Id       int    `json:"id"`
-	Pid      int    `json:"parentId"`
+	Pid      int    `json:"pId"`
 	Name     string `json:"name"`
 	Icon     string `json:"icon"`
 	Href     string `json:"href"`
 	Spread   bool   `json:"spread"`
 	Title    string `json:"title"`
+	CheckArr string `json:"checkArr" gorm:"default:0"`
 	Children []TreeNode
 }
 

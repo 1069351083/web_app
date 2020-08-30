@@ -23,3 +23,8 @@ type SysRolePage struct {
 	StartTime  common.XTime `json:"starttime"`
 	EndTime    common.XTime `json:"endtime"`
 }
+
+type MenuRole struct {
+	Rid  int   `json:"rid"`
+	Mids []int `json:"mids"`
+}
