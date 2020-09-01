@@ -4,7 +4,7 @@ app:
   port: 8090
   mode_path: './rbac_model.conf'
 log:
-  level: "debug"
+  level: "debg"
   filename: "web_app.log"
   max_size: 200
   max_age: 30
