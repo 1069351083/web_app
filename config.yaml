@@ -2,6 +2,7 @@ app:
   name: "web_app"
   mode: "dev"
   port: 8090
+  mode_path: './rbac_model.conf'
 log:
   level: "debug"
   filename: "web_app.log"

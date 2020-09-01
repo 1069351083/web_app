@@ -118,10 +118,12 @@ func SaveRolePermission(mr *model.MenuRole) error {
 			Rid: mr.Rid,
 			Pid: mid,
 		}).Error
-		if err != nil {
+		if e != nil {
 			zap.L().Error("添加失败")
-			return err
+			return e
 		}
 
 	}
+	return nil
+
 }

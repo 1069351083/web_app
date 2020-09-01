@@ -17,6 +17,7 @@ type Config struct {
 	Name       string `mapstructure:"name"`
 	Mode       string `mapstructure:"mode"`
 	port       int    `mapstructure:"port"`
+	ModelPath  string `mapstructure:"model_path"`
 	SingleKey  string `mapstructure:"single-key"`
 	*LogConf   `mapstructure:"log"`
 	*MysqlConf `mapstructure:"mysql"`

@@ -4,6 +4,7 @@ import (
 	"errors"
 	"web_app/dao/mysql"
 	"web_app/model"
+	"web_app/settings"
 
 	"github.com/casbin/casbin"
 	gormadapter "github.com/casbin/gorm-adapter"
@@ -11,7 +12,8 @@ import (
 
 func Casbin() *casbin.Enforcer {
 	a := gormadapter.NewAdapterByDB(mysql.DB)
-	e := casbin.NewEnforcer(a)
+	e := casbin.NewEnforcer(settings.Conf.ModelPath, a)
+	_ = e.LoadPolicy()
 	return e
 }
 

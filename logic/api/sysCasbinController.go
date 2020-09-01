@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//更新权限
 func UpdateCasbin(ctx *gin.Context) {
 	m := new(model.CasbinInReceive)
 	ctx.ShouldBindJSON(&m)
@@ -20,10 +21,10 @@ func UpdateCasbin(ctx *gin.Context) {
 
 }
 
+//查询全部权限
 func GetPolicyPathByAuthorityId(c *gin.Context) {
 	var cmr model.CasbinInReceive
 	_ = c.ShouldBindJSON(&cmr)
-
 	paths := service.GetPolicyPathByAuthorityId(cmr.Name)
 	response.OkWithData(gin.H{
 		"Paths": paths,
