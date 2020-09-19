@@ -67,3 +67,7 @@ func FailWithMessage(message string, c *gin.Context) {
 func FailWithDetailed(code int, data interface{}, message string, c *gin.Context) {
 	Result(code, data, message, c)
 }
+
+func FailWithData(data interface{}, c *gin.Context) {
+	Result(ERROR, data, "操作失败", c)
+}

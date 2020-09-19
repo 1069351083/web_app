@@ -16,12 +16,12 @@ var Conf = new(Config)
 type Config struct {
 	Name       string `mapstructure:"name"`
 	Mode       string `mapstructure:"mode"`
-	port       int    `mapstructure:"port"`
-	ModelPath  string `mapstructure:"model_path"`
+	Port       int    `mapstructure:"port"`
 	SingleKey  string `mapstructure:"single-key"`
 	*LogConf   `mapstructure:"log"`
 	*MysqlConf `mapstructure:"mysql"`
 	*RedisConf `mapstructure:"redis"`
+	*Casbin    `mapstructure:"casbin"`
 }
 
 type LogConf struct {
@@ -69,4 +69,8 @@ func Init() (err error) {
 		viper.Unmarshal(Conf)
 	})
 	return
+}
+
+type Casbin struct {
+	ModelPath string `mapstructure:"model_path" yaml:"model_path"`
 }

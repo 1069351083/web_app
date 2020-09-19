@@ -2,7 +2,6 @@ app:
   name: "web_app"
   mode: "dev"
   port: 8090
-  mode_path: './rbac_model.conf'
 log:
   level: "debug"
   filename: "web_app.log"
@@ -25,3 +24,6 @@ redis:
   IdleTimeout: 200
 yml :
   single-key: "nvzPlus"
+
+casbin:
+  model_path: './rbac_model.conf'

@@ -14,6 +14,7 @@ import (
 	"web_app/logger"
 	"web_app/routers"
 	"web_app/settings"
+	"web_app/utils"
 
 	"github.com/spf13/viper"
 
@@ -25,6 +26,12 @@ func main() {
 	if err := settings.Init(); err != nil {
 		zap.L().Error("config init filed", zap.Error(err))
 	}
+	//校验器
+	if err := utils.InitTrans("zh"); err != nil {
+		fmt.Printf("init trans failed, err:%v\n", err)
+		return
+	}
+
 	//2.初始化log
 	if err := logger.Init(settings.Conf.LogConf); err != nil {
 		zap.L().Error("config init filed", zap.Error(err))
@@ -39,6 +46,8 @@ func main() {
 	if err := redis.Init(settings.Conf.RedisConf); err != nil {
 		zap.L().Error("config init filed", zap.Error(err))
 	}
+	a := fmt.Sprintf("sdsadasdsad" + settings.Conf.Casbin.ModelPath)
+	fmt.Sprint(a)
 
 	//5.注册路由
 	r := routers.SetUp()
